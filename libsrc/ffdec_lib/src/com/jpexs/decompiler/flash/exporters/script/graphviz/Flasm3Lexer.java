@@ -1680,7 +1680,7 @@ public final class Flasm3Lexer extends AbstractLexer {
         return yychar;
     }
 
-    private static final byte PARAN     = 1;
+    private static final byte PAREN     = 1;
     private static final byte BRACKET   = 2;
     private static final byte LESSGREATER   = 3;
 
@@ -2064,11 +2064,11 @@ public final class Flasm3Lexer extends AbstractLexer {
           }
         case 40: break;
         case 16: 
-          { return token(TokenType.OPERATOR,PARAN);
+          { return token(TokenType.OPERATOR,PAREN);
           }
         case 41: break;
         case 17: 
-          { return token(TokenType.OPERATOR,-PARAN);
+          { return token(TokenType.OPERATOR,-PAREN);
           }
         case 42: break;
         case 18: 
