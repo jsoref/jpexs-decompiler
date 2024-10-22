@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 import javax.swing.text.Segment;
 
 /**
- * This is a default, and abstract implemenatation of a Lexer using JFLex 
+ * This is a default, and abstract implementation of a Lexer using JFLex 
  * with some utility methods that Lexers can implement.
  *
  * @author Ayman Al-Sairafi
