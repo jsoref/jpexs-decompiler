@@ -519,7 +519,7 @@ public final class FlasmLexer {
 
     /* error messages for the codes above */
     private static final String ZZ_ERROR_MSG[] = {
-        "Unkown internal scanner error",
+        "Unknown internal scanner error",
         "Error: could not match input",
         "Error: pushback value was too large"
     };
