@@ -506,7 +506,7 @@ public final class ConditionLexer {
     }
 
     /**
-     * Reports an error that occured while scanning.
+     * Reports an error that occurred while scanning.
      * <p>
      * In a wellformed scanner (no or only correct usage of yypushback(int) and
      * a match-all fallback rule) this method will only be called with things
