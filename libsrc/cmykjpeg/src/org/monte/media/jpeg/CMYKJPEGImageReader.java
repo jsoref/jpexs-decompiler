@@ -167,7 +167,7 @@ public class CMYKJPEGImageReader extends ImageReader {
                 numberOfSamplesPerLine = dis.readUnsignedShort();
                 numberOfComponentsInFrame = dis.readUnsignedByte();
                 // ...the rest of SOF header is not important to us.
-                // In fact, by encounterint a SOF header, we have reached
+                // In fact, by encountering a SOF header, we have reached
                 // the end of the metadata section we are interested in.
                 // Thus we can abort here.
                 break;
@@ -240,7 +240,7 @@ public class CMYKJPEGImageReader extends ImageReader {
                     // YCCK colors are inverted?
 
                     // We must have a color profile in order to perform a 
-                    // conersion from CMYK to RGB.
+                    // conversion from CMYK to RGB.
                     // I case none has been supplied, we create a default one here.
                     if (profile == null) {
                         profile = ICC_Profile.getInstance(CMYKJPEGImageReader.class.getResourceAsStream("Generic CMYK Profile.icc"));

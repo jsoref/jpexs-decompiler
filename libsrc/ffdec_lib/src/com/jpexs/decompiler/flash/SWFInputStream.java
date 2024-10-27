@@ -885,9 +885,9 @@ public class SWFInputStream implements AutoCloseable {
         float ret = Float.intBitsToFloat(val);
         endDumpLevel(ret);
         /*int sign = val >> 31;
-         int mantisa = val & 0x3FFFFF;
+         int mantissa = val & 0x3FFFFF;
          int exp = (val >> 22) & 0xFF;
-         float ret =(sign == 1 ? -1 : 1) * (float) Math.pow(2, exp)*  (1+((mantisa)/ (float)(1<<23)));*/
+         float ret =(sign == 1 ? -1 : 1) * (float) Math.pow(2, exp)*  (1+((mantissa)/ (float)(1<<23)));*/
         return ret;
     }
 
@@ -902,9 +902,9 @@ public class SWFInputStream implements AutoCloseable {
         newDumpLevel(name, "FLOAT16");
         int val = readUI16Internal();
         int sign = val >> 15;
-        int mantisa = val & 0x3FF;
+        int mantissa = val & 0x3FF;
         int exp = (val >> 10) & 0x1F;
-        float ret = (sign == 1 ? -1 : 1) * (float) Math.pow(2, exp) * (1 + ((mantisa) / (float) (1 << 10)));
+        float ret = (sign == 1 ? -1 : 1) * (float) Math.pow(2, exp) * (1 + ((mantissa) / (float) (1 << 10)));
         endDumpLevel(ret);
         return ret;
     }
@@ -3326,9 +3326,9 @@ public class SWFInputStream implements AutoCloseable {
         MORPHGRADIENT ret = new MORPHGRADIENT();
         newDumpLevel(name, "MORPHGRADIENT");
         // Despite of documentation (UI8 1-8), there are two fields
-        // spreadMode and interPolationMode which are same as in GRADIENT
+        // spreadMode and interpolationMode which are same as in GRADIENT
         ret.spreadMode = (int) readUB(2, "spreadMode");
-        ret.interPolationMode = (int) readUB(2, "interPolationMode");
+        ret.interpolationMode = (int) readUB(2, "interpolationMode");
         int numGradients = (int) readUB(4, "numGradients");
         ret.gradientRecords = new MORPHGRADRECORD[numGradients];
         for (int i = 0; i < numGradients; i++) {
@@ -3352,7 +3352,7 @@ public class SWFInputStream implements AutoCloseable {
         MORPHFOCALGRADIENT ret = new MORPHFOCALGRADIENT();
         newDumpLevel(name, "MORPHFOCALGRADIENT");
         ret.spreadMode = (int) readUB(2, "spreadMode");
-        ret.interPolationMode = (int) readUB(2, "interPolationMode");
+        ret.interpolationMode = (int) readUB(2, "interpolationMode");
         int numGradients = (int) readUB(4, "numGradients");
         ret.gradientRecords = new MORPHGRADRECORD[numGradients];
         for (int i = 0; i < numGradients; i++) {

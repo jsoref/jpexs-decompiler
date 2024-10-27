@@ -1430,7 +1430,7 @@ public class XFLConverter {
                     } else if (v instanceof String) {
                         writer.writeStartElement("PD");
                         writer.writeAttribute("n", n);
-                        //missing t attrinute = string (maybe "s"?)
+                        //missing t attribute = string (maybe "s"?)
                         writer.writeAttribute("v", (String) v);
                         writer.writeEndElement();
                         exportedNames.add(n);
@@ -1491,7 +1491,7 @@ public class XFLConverter {
 
         for (CharacterTag symbol : characters) {
             if ((symbol instanceof ShapeTag) && nonLibraryShapes.contains(symbol)) {
-                continue; //shapes with 1 ocurrence and single layer are not added to library
+                continue; //shapes with 1 occurrence and single layer are not added to library
             }
 
             if ((symbol instanceof ShapeTag) || (symbol instanceof DefineSpriteTag) || (symbol instanceof ButtonTag)) {
@@ -5504,7 +5504,7 @@ public class XFLConverter {
 
         private String alignment = null;
 
-        private final Set<CharacterTag> chatacterTags;
+        private final Set<CharacterTag> characterTags;
 
         private boolean bold = false;
 
@@ -5599,7 +5599,7 @@ public class XFLConverter {
                 colorAlpha = det.textColor.alpha;
             }
             
-            this.chatacterTags = characterTags;
+            this.characterTags = characterTags;
             this.characterImportLinkageURL = characterImportLinkageURL;
             this.lastImportedId = lastImportedId;
             this.characterNameMap = characterNameMap;
@@ -5680,7 +5680,7 @@ public class XFLConverter {
                     }
                     String f = attributes.getValue("face");
                     if (f != null) {
-                        for (Tag tag : chatacterTags) {
+                        for (Tag tag : characterTags) {
                             if (tag instanceof FontTag) {
                                 FontTag ft = (FontTag) tag;
                                 String fontName = null;

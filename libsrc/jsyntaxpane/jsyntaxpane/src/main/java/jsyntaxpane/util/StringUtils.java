@@ -24,13 +24,13 @@ import java.util.Comparator;
 public class StringUtils {
 
     /**
-     * Perfrom a String startsWith match with support for CamelCase.
+     * Perform a String startsWith match with support for CamelCase.
      * @param word full word
-     * @param abbr abbriviated word
+     * @param abbr abbreviated word
      * @return true if the word startsWith abbr, or if any uppercase char in abbr
      * matches the next uppercase char in word
      *
-     * FIXME: not so effecient as it creates a StringBuilder, but works
+     * FIXME: not so efficient as it creates a StringBuilder, but works
      * FIXME: add {@code Comparator<String, String>}
      */
     public static boolean camelCaseMatch(String word, String abbr) {

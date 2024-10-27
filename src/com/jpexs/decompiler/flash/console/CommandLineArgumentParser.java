@@ -2190,7 +2190,7 @@ public class CommandLineArgumentParser {
                 }
 
                 if (parallel && singleScriptFile) {
-                    logger.log(Level.WARNING, AppStrings.translate("export.script.singleFilePallelModeWarning"));
+                    logger.log(Level.WARNING, AppStrings.translate("export.script.singleFileParallelModeWarning"));
                     singleScriptFile = false;
                 }
 
@@ -2959,7 +2959,7 @@ public class CommandLineArgumentParser {
                                 System.exit(2);
                             }
                             if (!ok) {
-                                System.err.println("Import FAILED. Maybe unsuppoted media type? Only MP3 and uncompressed WAV are available.");
+                                System.err.println("Import FAILED. Maybe unsupported media type? Only MP3 and uncompressed WAV are available.");
                                 System.exit(1);
                             }
                         } else if (characterTag instanceof DefineBinaryDataTag) {
@@ -3018,7 +3018,7 @@ public class CommandLineArgumentParser {
                                 ok = false;
                             }
                             if (!ok) {
-                                System.err.println("Import FAILED. Maybe unsuppoted media type? Only MP3 and uncompressed WAV are available.");
+                                System.err.println("Import FAILED. Maybe unsupported media type? Only MP3 and uncompressed WAV are available.");
                                 System.exit(1);
                             }
                         } else if (characterTag instanceof DefineVideoStreamTag) {
@@ -3091,7 +3091,7 @@ public class CommandLineArgumentParser {
                         }
 
                         if (!found) {
-                            System.err.println(objectToReplace + " is not reocginized as a CharacterId or a script name.");
+                            System.err.println(objectToReplace + " is not recognized as a CharacterId or a script name.");
                             System.exit(1);
                         }
                     }
@@ -4119,12 +4119,12 @@ public class CommandLineArgumentParser {
                                         return swf;
                                     }
                                 };
-                                //loadingDialog.setWroker(worker);
+                                //loadingDialog.setWorker(worker);
                                 worker.execute();
 
                                 subcnt++;
                                 try {
-                                    proccessInfoSWF(file, worker.get(), pw);
+                                    processInfoSWF(file, worker.get(), pw);
                                 } catch (CancellationException | ExecutionException | InterruptedException ex) {
                                     logger.log(Level.WARNING, "Loading SWF {0} was cancelled.", streamEntry.getKey());
                                 }
@@ -4160,7 +4160,7 @@ public class CommandLineArgumentParser {
                             worker.execute();
 
                             try {
-                                proccessInfoSWF(null, worker.get(), pw);
+                                processInfoSWF(null, worker.get(), pw);
                             } catch (CancellationException | ExecutionException | InterruptedException ex) {
                                 logger.log(Level.WARNING, "Loading SWF was cancelled.");
                             }
@@ -4185,7 +4185,7 @@ public class CommandLineArgumentParser {
         return ds;
     }
 
-    private static void proccessInfoSWF(File bundle, SWF swf, PrintWriter pw) throws IOException {
+    private static void processInfoSWF(File bundle, SWF swf, PrintWriter pw) throws IOException {
         pw.println("[swf]");
         pw.println("file=" + (bundle == null ? swf.getFile() : bundle + ":" + swf.getFileTitle()));
         pw.println("fileSize=" + swf.fileSize);

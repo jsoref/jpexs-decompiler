@@ -85,7 +85,7 @@
 					<li>#2320 AS3 direct editation - modified flag of scripts vanishes after editing other script with and having error</li>
 					<li>#2272 Filters strength attribute caps at 100%</li>
 					<li>#2322 AS3 Construct property name formatting</li>
-					<li>#2322 AS3 Assigment position when using dup</li>
+					<li>#2322 AS3 Assignment position when using dup</li>
 					<li>#2323 AS3 direct editation - Number class traits are duplicated in constructor</li>
 					<li>#2324 AS3 direct editation - nested loop continue/break (with labels)</li>
 					<li>#2325 AS3 direct editation - allow single quoted attributes in XML</li>
@@ -210,7 +210,7 @@
 					<li>Asking more than once for the same imported (ImportAssets) URL</li>
 					<li>ABC Explorer problems when index out of bounds (Usually in obfuscated code)</li>
 					<li>Go to document class for classes with obfuscated name</li>
-					<li>#2270 AS3 decompilation - unnnecessary local registers assignments as part of expressions when using optimization like `dup, setlocal N` instead of `setlocal N, getlocal N`</li>
+					<li>#2270 AS3 decompilation - unnecessary local registers assignments as part of expressions when using optimization like `dup, setlocal N` instead of `setlocal N, getlocal N`</li>
 					<li>Movies (DefineVideoStream) preview not working</li>
 				</ul>
 			</description>
@@ -269,7 +269,7 @@
 					<li>Exe export mode can be selected in in Save EXE dialog (select filetype) - wrapper or projectors</li>
 					<li>Optimized (faster) context menu for large SWF trees</li>
 					<li>Optimized (faster) deleting items for large SWF trees</li>
-					<li>AS debugger - More varible flags</li>
+					<li>AS debugger - More variable flags</li>
 					<li>AS3 direct editation - edit files with native keyword</li>
 					<li>#1383 AS Debugger - debugging nested SWFs (enable "Open loaded SWFs while playing")</li>
 				</ul>
@@ -289,7 +289,7 @@
 					<li>Nullpointer on recent searches loader</li>
 					<li>#2177 Leftover process when invalid SWF opened - now main window is shown</li>
 					<li>Opening files with "Open with FFDec" on windows did not use same instance</li>
-					<li>#2183 AS1/2 Direct editation - case sensitive identifiers since SWF version 7</li>
+					<li>#2183 AS1/2 Direct editation - case-sensitive identifiers since SWF version 7</li>
 					<li>#2203 GFX - DefineSubImage with TGA bitmapFormat</li>
 					<li>#2207 AS - Index -2 out of bounds for some of the switches</li>
 					<li>#2190 AS1/2 - for..in inside switch before break</li>
@@ -378,7 +378,7 @@
 					<li>#2021, #2000 Caret position in editors when using tabs and / or unicode</li>
 					<li>#2021 Indent continuation when using tabs</li>
 					<li>#2116 DefineEditText display - correct getting fonts</li>
-					<li>#2116 DefineEditText display - apostroph decoding</li>
+					<li>#2116 DefineEditText display - apostrophe decoding</li>
 					<li>#2116 Apply colortransform after filters</li>
 					<li>#2116 Limit maximum number of box blur pixels</li>
 					<li>#2122 `-header` command did not support negative integers for displayrect</li>
@@ -409,7 +409,7 @@
 					<li>AS1/2 Vanishing source code in some cases</li>
 					<li>AS1/2 Debugger tooltips exception</li>
 					<li>#2131 UseOutline flag for DefineEditText</li>
-					<li>Wordrapping long words in DefineEditText</li>
+					<li>Wordwrapping long words in DefineEditText</li>
 					<li>#2133 Linux/Mac - ffdec.sh not correctly parsing java build number on javas without it</li>
 					<li>#2135 FLA Export - framescripts handling when addFrameScript uses Multinames instead of QNames</li>
 					<li>#1194 FLA Export - stream sound export</li>
@@ -419,7 +419,7 @@
 					<li>#2138, #2156 FLA Export - Missing morphshapes (incorrect holes calculation)</li>
 					<li>#2138 FLA Export - Mask layer was visible when did not contain a masked layer</li>
 					<li>FLA Export - frame numbering problem</li>
-					<li>#2145 FLA Export - missing frames, cliping layers order, nullpointer, empty sound layers</li>
+					<li>#2145 FLA Export - missing frames, clipping layers order, nullpointer, empty sound layers</li>
 					<li>#2142 XML Export - string values containing only spaces</li>
 					<li>AS3 - Nullpointer in MethodBody when no ABC set</li>
 					<li>#2148 AS2 Uninitialized class fields detector</li>
@@ -631,7 +631,7 @@
 					<li>#2077 AS3 direct editation - switch statement missing offset</li>
 					<li>#2077 AS3 allow star string as property name (XML access)</li>
 					<li>#2077 AS3 try..catch parts outside block</li>
-					<li>AS3 try..catch inside loop unneccessary continue</li>
+					<li>AS3 try..catch inside loop unnecessary continue</li>
 					<li>#2077 AS3 colliding types in current package with trait names</li>
 					<li>NullPointer on reload / uncache</li>
 					<li>#2076 Auto rename identifiers infinite loop caused by renaming in playerglobal library</li>
@@ -800,7 +800,7 @@
 				<p>Fixed</p>
 				<ul>
 					<li>#1948 Timeout while deobfuscation did not skip method</li>
-					<li>#1948 NullPointerException on Simplify expressions on incrementent/decrement</li>
+					<li>#1948 NullPointerException on Simplify expressions on increment/decrement</li>
 					<li>#1941 Export when no node is selected after SWF opening</li>
 					<li>Exception handling in cache clearing thread</li>
 					<li>DottedChain.PathPart NoSerializable exception</li>
@@ -890,7 +890,7 @@
 				<p>Fixed</p>
 				<ul>
 					<li>GFX - DefineExternalImage2 display and correct handling if standalone</li>
-					<li>#1931, #1934 DefineSprite rectange calculation (incorrect export dimensions)</li>
+					<li>#1931, #1934 DefineSprite rectangle calculation (incorrect export dimensions)</li>
 					<li>#1929, #1932 Wrong subsprite frames display</li>
 					<li>#1933 AS3 - Detection of variable names from debug info on multiple debug ins with same regindex</li>
 					<li>GFX - ExporterInfo prefix is NetString</li>
@@ -1009,7 +1009,7 @@
 				<ul>
 					<li>Warning before switching deobfuscation is now optional</li>
 					<li>#1690 Redesigned Deobfuscation tool dialog.</li>
-					<li>Shape/image/script/text import does not require specific folder name inside (but still preffers it when exists)</li>
+					<li>Shape/image/script/text import does not require specific folder name inside (but still prefers it when exists)</li>
 				</ul>
 				<p>Removed</p>
 				<ul>
@@ -1024,7 +1024,7 @@
 					<li>#1898 Keyboard shortcut to remove tags (DEL, SHIFT+DEL)</li>
 					<li>#1511, #1765 Quick search tree (Ctrl+F) for everything, not just AS3 classes</li>
 					<li>Quick search (Ctrl+F) for tag list view</li>
-					<li>#1884 Memory search - show size and adress in hex, show only aligned to N bytes</li>
+					<li>#1884 Memory search - show size and address in hex, show only aligned to N bytes</li>
 					<li>AS3 - "internal" keyword support</li>
 					<li>ProductInfo tag information display</li>
 					<li>DebugId tag proper display and editation</li>
@@ -1032,7 +1032,7 @@
 					<li>List of treenode subitems on otherwise empty panel (with 32x32 icons)</li>
 					<li>DefineVideoStream codecId and videoFlagsDeblocking handled as enums in raw editation</li>
 					<li>Option to mute frame sounds</li>
-					<li>Experimental option to fix conflation artifacts in antialising (slow)</li>
+					<li>Experimental option to fix conflation artifacts in antialiasing (slow)</li>
 					<li>Option to disable autoplay of sounds (DefineSound)</li>
 					<li>#1181 Remembering choice of loading assets via importassets tag</li>
 					<li>#1900 Free transform whole sprites</li>
@@ -1153,7 +1153,7 @@
 				<p>Added</p>
 				<ul>
 					<li>#1870 AS3 Adding new class - Target DoABC tag or position can be selected to prevent Error 1014</li>
-					<li>#1871 Toogle buttons for disabling subsprite animation, display preview of sprites/frames</li>
+					<li>#1871 Toggle buttons for disabling subsprite animation, display preview of sprites/frames</li>
 					<li>#1875 Remove no longer accessed items from cache after certain amount of time</li>
 					<li>#1280 AS3 Direct editation of traits with the same name</li>
 					<li>#1743 GFX - Adding DefineExternalImage2 and DefineSubImage tags</li>
@@ -1438,7 +1438,7 @@
 					<li>#1771 DefineShape4 line filled using single color</li>
 					<li>Minimum stroke width should be 1 px</li>
 					<li>#1828 Closing path in shape strokes from last moveTo only</li>
-					<li>Shape not clipped when clip area ouside of view</li>
+					<li>Shape not clipped when clip area outside of view</li>
 					<li>Sound tag player now uses less memory / threads - does not use Clip sound class</li>
 					<li>Freetransform tool dragging not always started on mousedown</li>
 					<li>#1695 Freetransform tool vs zooming</li>
@@ -1480,7 +1480,7 @@
 				<ul>
 					<li>Display object depth in flash panel</li>
 					<li>Show imported files on script import, able to cancel import</li>
-					<li>#270 AS3 show progress on deofuscating p-code</li>
+					<li>#270 AS3 show progress on deobfuscating p-code</li>
 					<li>#1718 Show progress on injecting debug info / SWD generation (before Debugging)</li>
 				</ul>
 				<p>Changed</p>
@@ -1578,7 +1578,7 @@
 					<li>AS - direct editation - long integer values</li>
 					<li>AS1/2 - on keypress key escaping</li>
 					<li>AS1/2 - stop/play/etc. can be used in expressions, pushing undefined</li>
-					<li>AS1/2 - startDrag constaint</li>
+					<li>AS1/2 - startDrag constraint</li>
 					<li>AS1/2 - gotoAndStop/play with simple label compiled as gotolabel</li>
 				</ul>
 			</description>

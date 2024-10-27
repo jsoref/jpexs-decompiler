@@ -137,7 +137,7 @@ public class ActionScript2DeobfuscatorTest extends ActionScript2TestBase {
             fail("if false OnTrue not removed");
         }
         if (res.contains("var ")) {
-            fail("variables for obsucation not removed");
+            fail("variables for obfuscation not removed");
         }
         if (res.contains("if")) {
             fail("if clauses not removed");
@@ -176,7 +176,7 @@ public class ActionScript2DeobfuscatorTest extends ActionScript2TestBase {
     }
 
     @Test
-    public void testEvailExpressionAfterWhile() throws Exception {
+    public void testEvalExpressionAfterWhile() throws Exception {
         String res = recompile("var a = 5;"
                 + "while(true){"
                 + "if(a==73){"
@@ -218,7 +218,7 @@ public class ActionScript2DeobfuscatorTest extends ActionScript2TestBase {
             fail("unreachable if onTrue 3 not removed");
         }
         if (!res.contains("\"OK\"")) {
-            fail("reachable of onTrue removed");
+            fail("reachable if onTrue removed");
         }
     }
 

@@ -1676,7 +1676,7 @@ public class ActionScript3Parser {
                     if (ss2.type == SymbolType.PARENT_OPEN) {
                         List<GraphTargetItem> args = call(allOpenedNamespaces, thisType, pkg, needsActivation, importedClasses, openedNamespaces, registerVars, inFunction, inMethod, variables, abc);
                         ret = new ConstructSuperAVM2Item(null, null, new LocalRegAVM2Item(null, null, 0, null, new TypeItem("Object") /*?*/), args);
-                    } else { //no costructor call, but it could be calling parent methods... => handle in expression
+                    } else { //no constructor call, but it could be calling parent methods... => handle in expression
                         lexer.pushback(ss2);
                         lexer.pushback(s);
                     }
@@ -2741,7 +2741,7 @@ public class ActionScript3Parser {
                 }
 
                 /*else if (isUse) {
-                    //Note: in this case, fullName attribute will be changed to real NS insude NamespaceItem
+                    //Note: in this case, fullName attribute will be changed to real NS including NamespaceItem
                     openedNamespaces.add(new NamespaceItem(fullName, Namespace.KIND_NAMESPACE));
                 } else */
                 if (isStar) {
@@ -2923,7 +2923,7 @@ public class ActionScript3Parser {
 
         List<GraphTargetItem> ret = parseScript(importedClasses, openedNamespaces, allOpenedNamespaces, scriptIndex, fileName, numberContextRef, abc, sinitNeedsActivation, sinitVariables);
         if (lexer.lex().type != SymbolType.EOF) {
-            throw new AVM2ParseException("Parsing finisned before end of the file", lexer.yyline());
+            throw new AVM2ParseException("Parsing finished before end of the file", lexer.yyline());
         }
         return ret;
     }

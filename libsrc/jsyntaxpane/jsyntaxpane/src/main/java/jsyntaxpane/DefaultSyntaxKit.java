@@ -129,7 +129,7 @@ public class DefaultSyntaxKit extends DefaultEditorKit implements ViewFactory {
 	}
 
 	/**
-	 * Creates a SyntaxComponent of the the given classname and installs
+	 * Creates a SyntaxComponent of the given classname and installs
 	 * it on the pane
 	 * @param pane
 	 * @param classname
@@ -156,7 +156,7 @@ public class DefaultSyntaxKit extends DefaultEditorKit implements ViewFactory {
 
 	/**
 	 * Find the SyntaxCOmponent with given classname that is installed
-	 * on the given pane, then deinstalls and removes it fom the
+	 * on the given pane, then deinstalls and removes it from the
 	 * editorComponents list
 	 * @param pane
 	 * @param classname
@@ -375,7 +375,7 @@ public class DefaultSyntaxKit extends DefaultEditorKit implements ViewFactory {
 			for (int i = 1; i < values.length; i++) {
 				String keyStrokeString = values[i].replace("menu ", MENU_MASK_STRING);
 				KeyStroke ks = KeyStroke.getKeyStroke(keyStrokeString);
-				// we may have more than onr value ( for key action ), but we will use the 
+				// we may have more than one value ( for key action ), but we will use the 
 				// last one in the single value here.  This will display the key in the
 				// popup menus.  Pretty neat.
 				if (ks == null) {
@@ -465,7 +465,7 @@ public class DefaultSyntaxKit extends DefaultEditorKit implements ViewFactory {
 	 * This is called by Swing to create a Document for the JEditorPane document
 	 * This may be called before you actually get a reference to the control.
 	 * We use it here to create a proper lexer and pass it to the
-	 * SyntaxDcument we return.
+	 * SyntaxDocument we return.
 	 * @return
 	 */
 	@Override
@@ -513,7 +513,7 @@ public class DefaultSyntaxKit extends DefaultEditorKit implements ViewFactory {
 	 * Register the given content type to use the given class name as its kit
 	 * When this is called, an entry is added into the private HashMap of the
 	 * registered editors kits.  This is needed so that the SyntaxPane library
-	 * has it's own registration of all the EditorKits
+	 * has its own registration of all the EditorKits
 	 * @param type
 	 * @param classname
 	 */
@@ -604,7 +604,7 @@ public class DefaultSyntaxKit extends DefaultEditorKit implements ViewFactory {
 	}
         
 	/**
-	 * Return the Configurations object for a Kit.  Perfrom lazy creation of a
+	 * Return the Configurations object for a Kit.  Perform lazy creation of a
 	 * Configuration object if nothing is created.
 	 *
 	 * @param kit
@@ -642,7 +642,7 @@ public class DefaultSyntaxKit extends DefaultEditorKit implements ViewFactory {
 	}
 
 	/**
-	 * Adds an abbrevisation to this kit's abbreviations.
+	 * Adds an abbreviation to this kit's abbreviations.
 	 * @param abbr
 	 * @param template
 	 */

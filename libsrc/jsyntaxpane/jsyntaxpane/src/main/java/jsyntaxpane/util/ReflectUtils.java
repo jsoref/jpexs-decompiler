@@ -101,7 +101,7 @@ public class ReflectUtils {
      * @param list
      * @return number of constructors added
      */
-    public static int addConstrcutors(Class aClass, List<Member> list) {
+    public static int addConstructors(Class aClass, List<Member> list) {
         Constructor[] constructors = aClass.getConstructors();
         for (Constructor c : constructors) {
             list.add(c);
@@ -136,7 +136,7 @@ public class ReflectUtils {
     }
 
     /**
-     * Adds the class SimpleNames, comma sepearated and surrounded by paranthesis to the
+     * Adds the class SimpleNames, comma separated and surrounded by parentheses to the
      * call StringBuffer
      * @param call
      * @param params
@@ -187,7 +187,7 @@ public class ReflectUtils {
     }
 
     /**
-     * Return a paranthesis enclosed, comma sepearated String of all
+     * Return a parentheses enclosed, comma separated String of all
      * SimpleClass names in params.
      * @param params
      * @return
@@ -280,9 +280,9 @@ public class ReflectUtils {
      * any that may be thrown.
      * This will also find a setter that accepts an interface that the value
      * implements.
-     * <b>This is still not very effcient and should only be called if
+     * <b>This is still not very efficient and should only be called if
      * performance is not of an issue.</b>
-     * You can check the return value to see if the call was seuccessful or
+     * You can check the return value to see if the call was successful or
      * not.
      * @param obj Object to receive the call
      * @param property property name (without set. First letter will be
@@ -353,7 +353,7 @@ public class ReflectUtils {
      * The Key String will be of the format objectClass.property(valueclass)
      * Where:
      * objectClass = obj.getClass().getName
-     * property = property (as passed in to callSetter), before set is appended
+     * property = property (as passed into callSetter), before set is appended
      * valueCLass = value.getClass().getName()
      * The Method will be either the method, or null if a search was not and no
      * method is found.

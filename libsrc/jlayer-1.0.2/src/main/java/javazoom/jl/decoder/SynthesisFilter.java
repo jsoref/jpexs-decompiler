@@ -50,7 +50,7 @@ final class SynthesisFilter {
     private float[] eq;
 
     /**
-     * Contructor.
+     * Constructor.
      * The scalefactor scales the calculated float pcm samples to short values
      * (raw pcm samples are in [-1.0, 1.0], if no violations occur).
      */
@@ -1524,7 +1524,7 @@ final class SynthesisFilter {
      * @param array The array to retrieve a subarra from.
      * @param offs  The offset in the array that corresponds to
      *              the first index of the subarray.
-     * @param len   The number of indeces in the subarray.
+     * @param len   The number of indices in the subarray.
      * @return The subarray, which may be of length 0.
      */
     static private float[] subArray(final float[] array, final int offs, int len) {

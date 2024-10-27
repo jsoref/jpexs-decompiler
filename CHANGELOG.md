@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 ### Added
 - Simple editor view - new simplified UI based on timeline view, 
-  which ressembles Flash Pro UI. Easier moving objects,
+  which resembles Flash Pro UI. Easier moving objects,
   resizing, adding frames, adding objects to stage. Instance property editation.
   Undo / redo feature. WIP
 - Cache as bitmap background color support (rendering, image and FLA export)
@@ -40,7 +40,7 @@ All notable changes to this project will be documented in this file.
 - [#2320] AS3 direct editation - modified flag of scripts vanishes after editing other script with and having error
 - [#2272] Filters strength attribute caps at 100%
 - [#2322] AS3 Construct property name formatting
-- [#2322] AS3 Assigment position when using dup
+- [#2322] AS3 Assignment position when using dup
 - [#2323] AS3 direct editation - Number class traits are duplicated in constructor
 - [#2324] AS3 direct editation - nested loop continue/break (with labels)
 - [#2325] AS3 direct editation - allow single quoted attributes in XML
@@ -140,7 +140,7 @@ All notable changes to this project will be documented in this file.
 - Asking more than once for the same imported (ImportAssets) URL
 - ABC Explorer problems when index out of bounds (Usually in obfuscated code)
 - Go to document class for classes with obfuscated name
-- [#2270] AS3 decompilation - unnnecessary local registers assignments as part
+- [#2270] AS3 decompilation - unnecessary local registers assignments as part
   of expressions when using optimization like `dup, setlocal N`
   instead of `setlocal N, getlocal N`
 - Movies (DefineVideoStream) preview not working
@@ -198,7 +198,7 @@ All notable changes to this project will be documented in this file.
 - Exe export mode can be selected in in Save EXE dialog (select filetype) - wrapper or projectors
 - Optimized (faster) context menu for large SWF trees
 - Optimized (faster) deleting items for large SWF trees
-- AS debugger - More varible flags
+- AS debugger - More variable flags
 - AS3 direct editation - edit files with native keyword
 - [#1383] AS Debugger - debugging nested SWFs (enable "Open loaded SWFs while playing")
 
@@ -217,7 +217,7 @@ All notable changes to this project will be documented in this file.
 - Nullpointer on recent searches loader
 - [#2177] Leftover process when invalid SWF opened - now main window is shown
 - Opening files with "Open with FFDec" on windows did not use same instance
-- [#2183] AS1/2 Direct editation - case sensitive identifiers since SWF version 7
+- [#2183] AS1/2 Direct editation - case-sensitive identifiers since SWF version 7
 - [#2203] GFX - DefineSubImage with TGA bitmapFormat
 - [#2207] AS - Index -2 out of bounds for some of the switches
 - [#2190] AS1/2 - for..in inside switch before break
@@ -303,7 +303,7 @@ All notable changes to this project will be documented in this file.
 - [#2021], [#2000] Caret position in editors when using tabs and / or unicode
 - [#2021] Indent continuation when using tabs
 - [#2116] DefineEditText display - correct getting fonts
-- [#2116] DefineEditText display - apostroph decoding
+- [#2116] DefineEditText display - apostrophe decoding
 - [#2116] Apply colortransform after filters
 - [#2116] Limit maximum number of box blur pixels
 - [#2122] `-header` command did not support negative integers for displayrect
@@ -334,7 +334,7 @@ All notable changes to this project will be documented in this file.
 - AS1/2 Vanishing source code in some cases
 - AS1/2 Debugger tooltips exception
 - [#2131] UseOutline flag for DefineEditText
-- Wordrapping long words in DefineEditText
+- Wordwrapping long words in DefineEditText
 - [#2133] Linux/Mac - ffdec.sh not correctly parsing java build number on javas without it
 - [#2135] FLA Export - framescripts handling when addFrameScript uses Multinames instead of QNames
 - [#1194] FLA Export - stream sound export
@@ -344,7 +344,7 @@ All notable changes to this project will be documented in this file.
 - [#2138], [#2156] FLA Export - Missing morphshapes (incorrect holes calculation)
 - [#2138] FLA Export - Mask layer was visible when did not contain a masked layer
 - FLA Export - frame numbering problem
-- [#2145] FLA Export - missing frames, cliping layers order, nullpointer, empty sound layers
+- [#2145] FLA Export - missing frames, clipping layers order, nullpointer, empty sound layers
 - [#2142] XML Export - string values containing only spaces
 - AS3 - Nullpointer in MethodBody when no ABC set
 - [#2148] AS2 Uninitialized class fields detector
@@ -540,7 +540,7 @@ All notable changes to this project will be documented in this file.
 - [#2077] AS3 direct editation - switch statement missing offset
 - [#2077] AS3 allow star string as property name (XML access)
 - [#2077] AS3 try..catch parts outside block
-- AS3 try..catch inside loop unneccessary continue
+- AS3 try..catch inside loop unnecessary continue
 - [#2077] AS3 colliding types in current package with trait names
 - NullPointer on reload / uncache
 - [#2076] Auto rename identifiers infinite loop caused by renaming in playerglobal library
@@ -680,7 +680,7 @@ Major version of SWF to XML export changed to 2.
 
 ### Fixed
 - [#1948] Timeout while deobfuscation did not skip method
-- [#1948] NullPointerException on Simplify expressions on incrementent/decrement
+- [#1948] NullPointerException on Simplify expressions on increment/decrement
 - [#1941] Export when no node is selected after SWF opening
 - Exception handling in cache clearing thread
 - DottedChain.PathPart NoSerializable exception
@@ -755,7 +755,7 @@ Major version of SWF to XML export changed to 2.
 
 ### Fixed
 - GFX - DefineExternalImage2 display and correct handling if standalone
-- [#1931], [#1934] DefineSprite rectange calculation (incorrect export dimensions)
+- [#1931], [#1934] DefineSprite rectangle calculation (incorrect export dimensions)
 - [#1929], [#1932] Wrong subsprite frames display
 - [#1933] AS3 - Detection of variable names from debug info on multiple debug ins with same regindex
 - GFX - ExporterInfo prefix is NetString
@@ -853,7 +853,7 @@ Major version of SWF to XML export changed to 2.
 ### Changed
 - Warning before switching deobfuscation is now optional
 - [#1690] Redesigned Deobfuscation tool dialog.
-- Shape/image/script/text import does not require specific folder name inside (but still preffers it when exists)
+- Shape/image/script/text import does not require specific folder name inside (but still prefers it when exists)
 
 ### Removed
 - "Restore control flow" deobfuscation level as it was the same as "Remove traps"
@@ -863,7 +863,7 @@ Major version of SWF to XML export changed to 2.
 - [#1898] Keyboard shortcut to remove tags (DEL, SHIFT+DEL)
 - [#1511], [#1765] Quick search tree (Ctrl+F) for everything, not just AS3 classes
 - Quick search (Ctrl+F) for tag list view
-- [#1884] Memory search - show size and adress in hex, show only aligned to N bytes
+- [#1884] Memory search - show size and address in hex, show only aligned to N bytes
 - AS3 - "internal" keyword support
 - ProductInfo tag information display
 - DebugId tag proper display and editation
@@ -871,7 +871,7 @@ Major version of SWF to XML export changed to 2.
 - List of treenode subitems on otherwise empty panel (with 32x32 icons)
 - DefineVideoStream codecId and videoFlagsDeblocking handled as enums in raw editation
 - Option to mute frame sounds
-- Experimental option to fix conflation artifacts in antialising (slow)
+- Experimental option to fix conflation artifacts in antialiasing (slow)
 - Option to disable autoplay of sounds (DefineSound)
 - [#1181] Remembering choice of loading assets via importassets tag
 - [#1900] Free transform whole sprites
@@ -968,7 +968,7 @@ Major version of SWF to XML export changed to 2.
 ## [17.0.0] - 2022-11-20
 ### Added
 - [#1870] AS3 Adding new class - Target DoABC tag or position can be selected to prevent Error 1014
-- [#1871] Toogle buttons for disabling subsprite animation, display preview of sprites/frames
+- [#1871] Toggle buttons for disabling subsprite animation, display preview of sprites/frames
 - [#1875] Remove no longer accessed items from cache after certain amount of time
 - [#1280] AS3 Direct editation of traits with the same name
 - [#1743] GFX - Adding DefineExternalImage2 and DefineSubImage tags
@@ -1204,7 +1204,7 @@ Major version of SWF to XML export changed to 2.
 - [#1771] DefineShape4 line filled using single color
 - Minimum stroke width should be 1 px
 - [#1828] Closing path in shape strokes from last moveTo only
-- Shape not clipped when clip area ouside of view
+- Shape not clipped when clip area outside of view
 - Sound tag player now uses less memory / threads - does not use Clip sound class
 - Freetransform tool dragging not always started on mousedown
 - [#1695] Freetransform tool vs zooming
@@ -1234,7 +1234,7 @@ Major version of SWF to XML export changed to 2.
 ### Added
 - [PR116] Display object depth in flash panel
 - Show imported files on script import, able to cancel import
-- [#270] AS3 show progress on deofuscating p-code
+- [#270] AS3 show progress on deobfuscating p-code
 - [#1718] Show progress on injecting debug info / SWD generation (before Debugging)
 
 ### Changed
@@ -1324,7 +1324,7 @@ Major version of SWF to XML export changed to 2.
 - AS - direct editation - long integer values
 - AS1/2 - on keypress key escaping
 - AS1/2 - stop/play/etc. can be used in expressions, pushing undefined
-- AS1/2 - startDrag constaint
+- AS1/2 - startDrag constraint
 - AS1/2 - gotoAndStop/play with simple label compiled as gotolabel
 
 ## [14.6.0] - 2021-11-22
@@ -1383,7 +1383,7 @@ Major version of SWF to XML export changed to 2.
 - [#1741] AS1/2 direct editation - new String constructor call
 - [#1726] Decompiling AS - missing break when on false branch vs continue on true
 - AS3 jumps deobfuscator
-- [#1699] AS1/2 detection of unitialized vars stuck
+- [#1699] AS1/2 detection of uninitialized vars stuck
 - [#1686] AS1/2 decompilation and editation of nested tellTarget
 - [#1685] Generic tag editor - removing multiple items at once vs single item
 - [#1684] Internal viewer - animated subsprites
@@ -1411,7 +1411,7 @@ Major version of SWF to XML export changed to 2.
 - Generic tag editor - remove more items at once
 - [#1669] Flash viewer - Smoothed vs non-smoothed bitmaps
 - PDF export - Smoothed bitmaps
-- Flash viewer - slow on larger zooms (now only diplayed rect is rendered)
+- Flash viewer - slow on larger zooms (now only displayed rect is rendered)
 - Flash viewer - scaling grid - ignore nonshapes when scaling
 - [#1672] Raw editor - digits grouping causing incorrect cursor movement
 - Rename invalid identifiers renames identifiers with a dollar sign
@@ -1490,7 +1490,7 @@ Major version of SWF to XML export changed to 2.
 ### Fixed
 - Exception when switching from nonribbon interface to ribbon
 - [#1396], [#1254] FLA Export - AS3 frame scripts
-- FLA Export - mutliple FrameLabel layers
+- FLA Export - multiple FrameLabel layers
 - [#1636] Nullpointer exception on empty editorpane
 - [#1156] Rendering - 9 slice scaling (DefineScalingGrid) clipping
 - [#1647] Copying to clipboard - Transparency support
@@ -1661,7 +1661,7 @@ Major version of SWF to XML export changed to 2.
 ### Fixed
 - AS3 break loop in catch clause
 - AS3 inner functions scope (setslot/getslot)
-- AS3 p-code traits of bodys of inner methods
+- AS3 p-code traits of bodies of inner methods
 - AS3 getslot/setslot, getglobalscope instruction
 
 ## [13.0.0] - 2021-02-08
@@ -1719,7 +1719,7 @@ Major version of SWF to XML export changed to 2.
 
 ## [12.0.1] - 2021-01-14
 ### Fixed
-- Critical fix - application GUI did not start on OSes without flashplayer (Linux, MacOS, even Windows)
+- Critical fix - application GUI did not start on OSes without flashplayer (Linux, macOS, even Windows)
 
 ## [12.0.0] - 2021-01-12
 ### Added
@@ -1740,7 +1740,7 @@ Major version of SWF to XML export changed to 2.
 - Changed /bin/bash to /usr/bin/env bash
 - Building does not require Naashorn - uses Beanshell instead
 - Use object.§§slot[index] syntax instead of /* UnknownSlot */ comment when slot cannot be determined (AS3)
-- Show §§findproperty when neccessary (AS3)
+- Show §§findproperty when necessary (AS3)
 
 ### Fixed
 - Scaling - Distorted images/canvas on Hi-dpi monitors for Java 9 and later
@@ -1937,8 +1937,8 @@ Major version of SWF to XML export changed to 2.
 - [#1174] Change language fix
 - some AS2 deobfuscation fixes
 - [#1183] Index out of bounds fix
-- Implicit coersion on binary/unary opfix
-- debugger: corect display variable values through getters
+- Implicit coercion on binary/unary opfix
+- debugger: correct display variable values through getters
 - Multiple XLF export fix
 - [#1193] FLA export - text tag advance fix, one layer shape fix
 - [#1193] FLA export - smoothed image detection, export raw JPEG data
@@ -2006,7 +2006,7 @@ Major version of SWF to XML export changed to 2.
 - [#1107] Text Offset Incorrect fixed
 - [#1106] New Shapes replace function fix
 - [#1113] It takes too long to switch between rendered sprite
-- [#1075] Lenght of DefineText in some cases
+- [#1075] Length of DefineText in some cases
 - [#1127] autoRenameIdentifiers is not supported in CLI mode
 - [#1128] Letterspacing bug (after font embed): ignore letterspacing when character changed
 - [#1103] Foreach variables fixes
@@ -2071,7 +2071,7 @@ Major version of SWF to XML export changed to 2.
 
 ### Removed
 - Removed old "debugger" buttons
-- Removed search from browsers cache - inactual code
+- Removed search from browsers cache - in actual code
 
 ### Fixed
 - Many AS3 direct editation related bugs
@@ -2087,7 +2087,7 @@ Major version of SWF to XML export changed to 2.
 - AVM2 code execution fix
 - [#1016] AS3 direct editation fixes
 - [#1010] AS2 direct editation - internal and override is not a reserved word
-- [#1008] pushshort instruction diassembly
+- [#1008] pushshort instruction disassembly
 - [#1004] this/super can be AS1/2 variable
 - [#933] AS3 allow numbers as object literal keys
 
@@ -2139,7 +2139,7 @@ Major version of SWF to XML export changed to 2.
 - [#953] Mac application permission fix (maybe)
 - [#954] IndexOutOfBounds fix
 - [#950] AddTrait setting modified fix
-- [#945] AS1/2 directeditation fix - member named as global function
+- [#945] AS1/2 direct editation fix - member named as global function
 - [#957] AS1/2 IndexOutOfBounds fix
 - [#956] Invalid jump offsets warning
 - [#968] Sprites export with wrong coloring
@@ -2211,7 +2211,7 @@ Major version of SWF to XML export changed to 2.
 - [#832] AS3 direct edit - other ABCs resolving fix
 - [#904] Cannot export images
 - [#910] Missing instructions
-- Opening not existent files on restoring last session
+- Opening nonexistent files on restoring last session
 - [#922] Edit text leading
 - Put image before shape on shape replace
 - [#916] Replacing Shape corrupts SWF
@@ -2237,7 +2237,7 @@ Major version of SWF to XML export changed to 2.
 
 ### Changed
 - AS1/2: Shown only the constant pool(s) in pcode editor
-- Do not allow to chage tag tree selection, when current tag is under editing
+- Do not allow to change tag tree selection, when current tag is under editing
 - Faster bitmap export
 - Using less memory when playing sounds
 - Error message changed when the opened file is not swf
@@ -2311,7 +2311,7 @@ Major version of SWF to XML export changed to 2.
 - Default color skin altered
 - [#350] Allow only one running instance (Windows only, can be turned off)
 - SWFs in zip based bundles (SWC for example) can be modified & saved
-- Performace improvements
+- Performance improvements
 - More compact SWF-XML format
 - Marking changed parentnodes as bold too
 
@@ -2369,7 +2369,7 @@ Major version of SWF to XML export changed to 2.
 - [#773] Scripts associated with ClipActions are not shown
 - [#776] Stop working after setting "number of threads" to 0
 - [#783] No OK box when edited script or text was saved
-- [#785] Text search. Remember last choise, Unicode case insensitive search
+- [#785] Text search. Remember last choise, Unicode case-insensitive search
 - [#787] Search in AS bug (when navigating to searched results)
 - [#788] Add DefineCompactedFont Tag to gfx file
 - [#790] Impossible to change letters under a font
@@ -2395,7 +2395,7 @@ Major version of SWF to XML export changed to 2.
 
 ## [4.0.4] - 2014-11-23
 ### Changed
-- better file cache, removing unneccessary temp files
+- better file cache, removing unnecessary temp files
 
 ### Fixed
 - obfuscated identifiers
@@ -2722,7 +2722,7 @@ Major version of SWF to XML export changed to 2.
 ### Changed
 - [#369] new SVG and preview image rendering
 - [#390] refresh font list without reloading the application
-- [#453] update texts aftert adding new character to a font tag
+- [#453] update texts after adding new character to a font tag
 - [#459] remember text panel splitter position
 - [#461] font panel gui redesigned
 
@@ -2730,7 +2730,7 @@ Major version of SWF to XML export changed to 2.
 - [#451] dialog windows are not on the center of the screen
 - [#454] Text syntax highlighting
 - [#455],[#465] classic interface issues
-- [#474] changeing language only available one time
+- [#474] changing language only available one time
 - [#477] log window localization
 - [#481] SVG export fix
 - [#484] Oversized advance value after editing DefineText with DefineFont2 font
@@ -2766,7 +2766,7 @@ Major version of SWF to XML export changed to 2.
 - [#427] Exception on linux fixed
 - [#405], [#420], [#421] Some decompilation issues fixed
 - [#430] Configuration default value problem fixed
-- [#397], [#431] Deobfuscation stucked sometimes problem fixed
+- [#397], [#431] Deobfuscation stuck sometimes problem fixed
 
 ## [1.7.4] - 2013-11-10
 ### Added
@@ -2794,7 +2794,7 @@ Major version of SWF to XML export changed to 2.
 - [#382],[#396] AS3: Adding new trait (method/slot/const)
 - AS3: Highlighting pair parenthesis/bracket
 - AS3: Editing various new P-code parameters
-- AS3: Highligting of trait names/types/parameters
+- AS3: Highlighting of trait names/types/parameters
 - AS3: Global rename identifier for traits
 - [#357] Playback controls for DefineSound
 - [#391] AS3: Native methods mark
@@ -2853,7 +2853,7 @@ Major version of SWF to XML export changed to 2.
 - [#292] Change background color in SWF preview
 - [#301] Clear errors log button
 - [#313] Command line parameter for ignore all errors
-- [#330] Protection agains adding same characters
+- [#330] Protection against adding same characters
 - [#332] AS1/2 Showing elapsed times during commandline export
 - [#344] Reload opened SWF
 - Decompilation timeouts
@@ -2882,7 +2882,7 @@ Major version of SWF to XML export changed to 2.
 - [#287] Typo in parallelSpeedUp parameter
 - [#290],[#291] improved select language dialog
 - [#294] minor GUI fixes
-- [#298] Progressbar positition issues
+- [#298] Progressbar position issues
 - [#296] better export directory remembering
 - [#314] Better deobfuscating filenames
 - [#316] Readonly editor panes accepted Ctrl+Z/Y
@@ -3033,7 +3033,7 @@ Major version of SWF to XML export changed to 2.
 - [#196],[#197] switch issues
 - [#198] DefineFont2 empty check
 - [#200] DefineBitsLossLess fix
-- [#201] Nonworking main window in Linux/MacOS (due toAssociation)
+- [#201] Nonworking main window in Linux/macOS (due toAssociation)
 
 ## [1.6.4 update 1] - 2013-06-30
 ### Fixed
@@ -3183,7 +3183,7 @@ Major version of SWF to XML export changed to 2.
 - [#83] Fixed images transparency (zlib fix)
 - Fixed graphparts with only jump in it (obfuscators)
 - MORPHGRADIENT FIX
-- Trasparency in DefineBitsJPEG3 and 4
+- Transparency in DefineBitsJPEG3 and 4
 - Displaying shapes,morphshapes and sprites with bitmaps
 
 ## [1.5.1] - 2013-05-01
@@ -3316,7 +3316,7 @@ Major version of SWF to XML export changed to 2.
 
 ### Fixed
 - [#32] - AS2: Action255 bug
-- [#31] - Erorrneous tags are now ignored
+- [#31] - Erroneous tags are now ignored
 - DefineBitsLossLess 1&2 on 8bit colormapped images
 
 ## [1.3.0] - 2013-02-17

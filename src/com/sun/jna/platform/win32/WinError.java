@@ -4381,7 +4381,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The data provider was not able to intrepret the flags set for a column
+    // The data provider was not able to interpret the flags set for a column
     // binding in an accessor.
     //
     int ERROR_BAD_ACCESSOR_FLAGS = 773;
@@ -13536,7 +13536,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // Log service enountered an error when attempting to read from a log
+    // Log service encountered an error when attempting to read from a log
     // container.
     //
     int ERROR_LOG_CONTAINER_READ_FAILED = 6639;
@@ -13546,7 +13546,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // Log service enountered an error when attempting to write to a log
+    // Log service encountered an error when attempting to write to a log
     // container.
     //
     int ERROR_LOG_CONTAINER_WRITE_FAILED = 6640;
@@ -13556,7 +13556,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // Log service enountered an error when attempting open a log container.
+    // Log service encountered an error when attempting open a log container.
     //
     int ERROR_LOG_CONTAINER_OPEN_FAILED = 6641;
 
@@ -13565,7 +13565,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // Log service enountered an invalid container state when attempting a
+    // Log service encountered an invalid container state when attempting a
     // requested action.
     //
     int ERROR_LOG_CONTAINER_STATE_INVALID = 6642;
@@ -13764,7 +13764,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The buffer passed in to PushTransaction or PullTransaction is not in a
+    // The buffer passed into PushTransaction or PullTransaction is not in a
     // valid format.
     //
     int ERROR_TRANSACTION_INVALID_MARSHALL_BUFFER = 6713;
@@ -13848,7 +13848,7 @@ public interface WinError {
     // The call to create a superior Enlistment on this Transaction object could
     // not be completed, because the Transaction object specified for the
     // enlistment is a subordinate branch of the Transaction. Only the root of
-    // the Transactoin can be enlisted on as a superior.
+    // the Transaction can be enlisted on as a superior.
     //
     int ERROR_TRANSACTION_NOT_ROOT = 6721;
 
@@ -14366,7 +14366,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The transactional resource manager had too many tranactions outstanding
+    // The transactional resource manager had too many transactions outstanding
     // that could not be aborted. The transactional resource manger has been
     // shut down.
     //
@@ -17418,14 +17418,14 @@ public interface WinError {
     int ERROR_DS_DST_NC_MISMATCH = 8486;
 
     //
-    // MessageId: ERROR_DS_NOT_AUTHORITIVE_FOR_DST_NC
+    // MessageId: ERROR_DS_NOT_AUTHORITATIVE_FOR_DST_NC
     //
     // MessageText:
     //
     // Destination of a cross-domain move is not authoritative for the
     // destination naming context.
     //
-    int ERROR_DS_NOT_AUTHORITIVE_FOR_DST_NC = 8487;
+    int ERROR_DS_NOT_AUTHORITATIVE_FOR_DST_NC = 8487;
 
     //
     // MessageId: ERROR_DS_SRC_GUID_MISMATCH
@@ -18647,7 +18647,7 @@ public interface WinError {
     // MessageText:
     //
     // The FSMO role ownership could not be verified because its directory
-    // partition has not replicated successfully with atleast one replication
+    // partition has not replicated successfully with at least one replication
     // partner.
     //
     int ERROR_DS_ROLE_NOT_VERIFIED = 8610;
@@ -20584,7 +20584,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // Problem with some part of the filterspec or providerspecific buffer in
+    // Problem with some part of the filterspec or provider specific buffer in
     // general.
     //
     int WSA_QOS_BAD_OBJECT = 11013;
@@ -21816,7 +21816,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // Sent DOS cookie notify to intiator.
+    // Sent DOS cookie notify to initiator.
     //
     int ERROR_IPSEC_IKE_DOS_COOKIE_SENT = 13890;
 
@@ -22423,7 +22423,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // Manifest Parse Error : Invalid character for hexidecimal digit.
+    // Manifest Parse Error : Invalid character for hexadecimal digit.
     //
     int ERROR_SXS_XML_E_INVALID_HEXIDECIMAL = 14048;
 
@@ -22857,7 +22857,7 @@ public interface WinError {
     // MessageText:
     //
     // A string containing localized substitutable content was malformed. Either
-    // a dollar sign ($) was follwed by something other than a left parenthesis
+    // a dollar sign ($) was followed by something other than a left parenthesis
     // or another dollar sign or an substitution's right parenthesis was not
     // found.
     //
@@ -23271,7 +23271,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The xpath expression exceeded supported complexity. Please symplify it or
+    // The xpath expression exceeded supported complexity. Please simplify it or
     // split it into two or more simple expressions.
     //
     int ERROR_EVT_FILTER_TOO_COMPLEX = 15026;
@@ -23372,7 +23372,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The publisher has been disabled and its resource is not avaiable. This
+    // The publisher has been disabled and its resource is not available. This
     // usually occurs when the publisher is in the process of being uninstalled
     // or upgraded.
     //
@@ -23407,7 +23407,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The log of the subscription is in disabled state, and can not be used to
+    // The log of the subscription is in disabled state, and cannot be used to
     // forward events to. The log must first be enabled before the subscription
     // can be activated.
     //
@@ -23674,7 +23674,7 @@ public interface WinError {
     // with several fields encoded in the value. The parts of an
     // HRESULT are shown below.
     //
-    // Many of the macros and functions below were orginally defined to
+    // Many of the macros and functions below were originally defined to
     // operate on SCODEs. SCODEs are no longer used. The macros are
     // still present for compatibility and easy porting of Win16 code.
     // Newly written code should use the HRESULT macros and functions.
@@ -24241,7 +24241,7 @@ public interface WinError {
     // interfaces.
     //
     //
-    // Generic OLE errors that may be returned by many inerfaces
+    // Generic OLE errors that may be returned by many interfaces
     //
     int OLE_E_FIRST = 0x80040000;
 
@@ -24277,7 +24277,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // Can't enumerate any more, because the associated data is missing
+    // Can't enumerate anymore, because the associated data is missing
     //
     int OLE_E_ENUM_NOMORE = 0x80040002;
 
@@ -25635,7 +25635,7 @@ public interface WinError {
     //
     // The requested semantics of retention of isolation across retaining commit
     // and abort boundaries cannot be supported by this transaction
-    // implementation, or isoF;ags was not equal to zero.
+    // implementation, or isoFlags was not equal to zero.
     //
     int XACT_E_NOISORETAIN = 0x8004D00B;
 
@@ -25673,7 +25673,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // An invalid combination of F;ags was specified
+    // An invalid combination of Flags was specified
     //
     int XACT_E_NOTSUPPORTED = 0x8004D00F;
 
@@ -27848,11 +27848,11 @@ public interface WinError {
     int STG_E_UNIMPLEMENTEDFUNCTION = 0x800300FE;
 
     //
-    // MessageId: STG_E_INVALIDF;AG
+    // MessageId: STG_E_INVALIDFLAG
     //
     // MessageText:
     //
-    // Invalid F;ag error.
+    // Invalid Flag error.
     //
     int STG_E_INVALIDFLAG = 0x800300FF;
 
@@ -27970,7 +27970,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The compound file was not created with the STGM_SIMPLE F;ag
+    // The compound file was not created with the STGM_SIMPLE Flag
     //
     int STG_E_NOTSIMPLEFORMAT = 0x80030112;
 
@@ -28024,7 +28024,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The notified event sink will not inF;uence the storage operation.
+    // The notified event sink will not influence the storage operation.
     //
     int STG_S_MONITORING = 0x00030203;
 
@@ -29029,11 +29029,11 @@ public interface WinError {
     int NTE_BAD_ALGID = 0x80090008;
 
     //
-    // MessageId: NTE_BAD_F;AGS
+    // MessageId: NTE_BAD_FLAGS
     //
     // MessageText:
     //
-    // Invalid F;ags specified.
+    // Invalid Flags specified.
     //
     int NTE_BAD_FLAGS = 0x80090009;
 
@@ -33319,7 +33319,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // An attempt was made to end a non-existent transaction.
+    // An attempt was made to end a nonexistent transaction.
     //
     int SCARD_E_NOT_TRANSACTED = 0x80100016;
 
@@ -35040,7 +35040,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The specifiec context is already attached to another object
+    // The specific context is already attached to another object
     //
     int ERROR_FLT_CONTEXT_ALREADY_LINKED = 0x801F001C;
 
@@ -35116,7 +35116,7 @@ public interface WinError {
     // MessageText:
     //
     // {No DWM redirection surface is available}
-    // The DWM was unable to provide a redireciton surface to complete the
+    // The DWM was unable to provide a redirection surface to complete the
     // DirectX present.
     //
     int DWM_E_NO_REDIRECTION_SURFACE_AVAILABLE = 0x80263003;
@@ -35306,7 +35306,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // Not able to present with color convertion
+    // Not able to present with color conversion
     //
     int ERROR_GRAPHICS_CANNOTCOLORCONVERT = 0xC0262008;
 
@@ -35571,7 +35571,7 @@ public interface WinError {
     // MessageText:
     //
     // Specified VidPN modality is not supported (e.g. at least two of the
-    // pinned modes are not cofunctiona;.
+    // pinned modes are not cofunctional.
     //
     int ERROR_GRAPHICS_VIDPN_MODALITY_NOT_SUPPORTED = 0xC0262306;
 
@@ -36865,7 +36865,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // An internal Monitor Configuration API error occured.
+    // An internal Monitor Configuration API error occurred.
     //
     int ERROR_GRAPHICS_MCA_INTERNAL_ERROR = 0xC0262588;
 
@@ -37186,7 +37186,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The clear disable F;ag is set and all clear operations now require
+    // The clear disable Flag is set and all clear operations now require
     // physical access.
     //
     int TPM_E_CLEAR_DISABLED = 0x80280005;
@@ -37250,7 +37250,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The key handle cannot be intrepreted.
+    // The key handle cannot be interpreted.
     //
     int TPM_E_INVALID_KEYHANDLE = 0x8028000C;
 
@@ -37545,7 +37545,7 @@ public interface WinError {
     // MessageText:
     //
     // A mode parameter is bad, such as capArea or subCapArea for
-    // TPM_GetCapability, phsicalPresence parameter for TPM_PhysicalPresence, or
+    // TPM_GetCapability, physicalPresence parameter for TPM_PhysicalPresence, or
     // migrationType for TPM_CreateMigrationBlob.
     //
     int TPM_E_BAD_MODE = 0x8028002C;
@@ -37697,7 +37697,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The NV area is locked and not writtable.
+    // The NV area is locked and not writable.
     //
     int TPM_E_AREA_LOCKED = 0x8028003C;
 
@@ -37878,7 +37878,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The DAA command has no resources availble to execute the command.
+    // The DAA command has no resources available to execute the command.
     //
     int TPM_E_DAA_RESOURCES = 0x80280050;
 
@@ -39051,7 +39051,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // An error occured while attemption to compress or extract the data.
+    // An error occurred while attempting to compress or extract the data.
     //
     int PLA_E_CABAPI_FAILURE = 0x80300113;
 
@@ -40124,11 +40124,11 @@ public interface WinError {
     int FWP_E_INVALID_ENUMERATOR = 0x8032001D;
 
     //
-    // MessageId: FWP_E_INVALID_F;AGS
+    // MessageId: FWP_E_INVALID_FLAGS
     //
     // MessageText:
     //
-    // The F;ags field contains an invalid value.
+    // The Flags field contains an invalid value.
     //
     int FWP_E_INVALID_FLAGS = 0x8032001E;
 
@@ -40466,7 +40466,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // Netowork interface aborted the request.
+    // Network interface aborted the request.
     //
     int ERROR_NDIS_REQUEST_ABORTED = 0x8034000C;
 
@@ -40475,7 +40475,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // Network interface can not process the request because it is being reset.
+    // Network interface cannot process the request because it is being reset.
     //
     int ERROR_NDIS_RESET_IN_PROGRESS = 0x8034000D;
 
@@ -40575,7 +40575,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // An attempt was made to map a file that can not be found.
+    // An attempt was made to map a file that cannot be found.
     //
     int ERROR_NDIS_FILE_NOT_FOUND = 0x8034001B;
 
@@ -40584,7 +40584,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // An error occured while NDIS tried to map the file.
+    // An error occurred while NDIS tried to map the file.
     //
     int ERROR_NDIS_ERROR_READING_FILE = 0x8034001C;
 
@@ -40593,7 +40593,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // An attempt was made to map a file that is alreay mapped.
+    // An attempt was made to map a file that is already mapped.
     //
     int ERROR_NDIS_ALREADY_MAPPED = 0x8034001D;
 
@@ -40708,7 +40708,7 @@ public interface WinError {
     //
     // MessageText:
     //
-    // The wireless local area network interface is busy and can not perform the
+    // The wireless local area network interface is busy and cannot perform the
     // requested operation.
     //
     int ERROR_NDIS_DOT11_MEDIA_IN_USE = 0x80342001;

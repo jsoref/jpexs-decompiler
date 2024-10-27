@@ -103,7 +103,7 @@ public class JTreeTable extends JTable
         // No grid.
         setShowGrid(false);
 
-        // No intercell spacing
+        // No inter cell spacing
         setIntercellSpacing(new Dimension(0, 0));
 
         // And update the height of the trees row to match that of
@@ -250,7 +250,7 @@ public class JTreeTable extends JTable
         }
 
         /**
-         * Sublcassed to translate the graphics such that the last visible row
+         * Subclassed to translate the graphics such that the last visible row
          * will be drawn at 0,0.
          */
         @Override

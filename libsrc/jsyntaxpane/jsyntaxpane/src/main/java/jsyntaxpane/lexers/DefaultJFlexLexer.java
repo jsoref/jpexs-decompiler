@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 import javax.swing.text.Segment;
 
 /**
- * This is a default, and abstract implemenatation of a Lexer using JFLex 
+ * This is a default, and abstract implementation of a Lexer using JFLex 
  * with some utility methods that Lexers can implement.
  *
  * @author Ayman Al-Sairafi
@@ -109,7 +109,7 @@ public abstract class DefaultJFlexLexer implements Lexer {
     }
 
     /**
-     * This will be called to reset the the lexer.
+     * This will be called to reset the lexer.
      * This is created automatically by JFlex.
      * @param reader
      */

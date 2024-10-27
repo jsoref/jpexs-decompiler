@@ -133,7 +133,7 @@ import javax.imageio.stream.ImageInputStream;
  * before starting the interpreter.
  * <p>
  * Once at least one chunk has been declared, the interpreter will only call the
- * visitor for occurences of the declared group chunks and data chunks. The property
+ * visitor for occurrences of the declared group chunks and data chunks. The property
  * chunks and the collection chunks can be obtained from the current group chunk
  * by calling #getProperty or #getCollection.
  * <br>Note: All information the visitor can obtain during interpretation is only
@@ -257,8 +257,8 @@ private final static boolean DEBUG =false;
      * AbortException during tree traversal.
      *
      * @exception ParseException
-     * Is thrown when an interpretation error occured.
-     * The stream is positioned where the error occured.
+     * Is thrown when an interpretation error occurred.
+     * The stream is positioned where the error occurred.
      * @exception	AbortException
      * Is thrown when the visitor decided to abort the
      * interpretation.
@@ -537,7 +537,7 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
     }
 
     /**
-     * Checks wether the ID of the chunk has been declared as a
+     * Checks whether the ID of the chunk has been declared as a
      * property chunk.
      *
      * <p>Pre condition
@@ -556,7 +556,7 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
     }
 
     /**
-     * Checks wether the ID of the chunk has been declared as a
+     * Checks whether the ID of the chunk has been declared as a
      * collection chunk.
      *
      * <p>Pre condition
@@ -727,7 +727,7 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
 
     /* ---- Class methods ---- */
     /**
-     * Checks wether the argument represents a valid RIFF GroupID.
+     * Checks whether the argument represents a valid RIFF GroupID.
      *
      * <p>Validation
      * <ul>
@@ -742,7 +742,7 @@ if (DEBUG)System.out.println("RIFFParser.parseLocalChunk "+idToString(id));
     }
 
     /**
-     * Checks wether the argument represents a valid RIFF Group Type.
+     * Checks whether the argument represents a valid RIFF Group Type.
      *
      * <p>Validation
      * <ul>

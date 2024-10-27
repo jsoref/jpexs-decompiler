@@ -1566,7 +1566,7 @@ public final class Flasm3Lexer extends AbstractLexer {
 
   /* error messages for the codes above */
   private static final String ZZ_ERROR_MSG[] = {
-    "Unkown internal scanner error",
+    "Unknown internal scanner error",
     "Error: could not match input",
     "Error: pushback value was too large"
   };
@@ -1680,7 +1680,7 @@ public final class Flasm3Lexer extends AbstractLexer {
         return yychar;
     }
 
-    private static final byte PARAN     = 1;
+    private static final byte PAREN     = 1;
     private static final byte BRACKET   = 2;
     private static final byte LESSGREATER   = 3;
 
@@ -1865,7 +1865,7 @@ public final class Flasm3Lexer extends AbstractLexer {
 
 
   /**
-   * Reports an error that occured while scanning.
+   * Reports an error that occurred while scanning.
    *
    * In a wellformed scanner (no or only correct usage of 
    * yypushback(int) and a match-all fallback rule) this method 
@@ -2064,11 +2064,11 @@ public final class Flasm3Lexer extends AbstractLexer {
           }
         case 40: break;
         case 16: 
-          { return token(TokenType.OPERATOR,PARAN);
+          { return token(TokenType.OPERATOR,PAREN);
           }
         case 41: break;
         case 17: 
-          { return token(TokenType.OPERATOR,-PARAN);
+          { return token(TokenType.OPERATOR,-PAREN);
           }
         case 42: break;
         case 18: 

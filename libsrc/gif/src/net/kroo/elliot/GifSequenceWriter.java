@@ -27,8 +27,8 @@ public class GifSequenceWriter {
    * 
    * @param outputStream the ImageOutputStream to be written to
    * @param imageType one of the imageTypes specified in BufferedImage
-   * @param timeBetweenFramesMS the time between frames in miliseconds
-   * @param loopContinuously wether the gif should loop repeatedly
+   * @param timeBetweenFramesMS the time between frames in milliseconds
+   * @param loopContinuously whether the gif should loop repeatedly
    * @throws IIOException if no gif ImageWriters are found
    *
    * @author Elliot Kroo (elliot[at]kroo[dot]net)
@@ -72,7 +72,7 @@ public class GifSequenceWriter {
     IIOMetadataNode commentsNode = getNode(root, "CommentExtensions");
     commentsNode.setAttribute("CommentExtension", "Created by MAH");
 
-    IIOMetadataNode appEntensionsNode = getNode(
+    IIOMetadataNode appExtensionsNode = getNode(
       root,
       "ApplicationExtensions");
 
@@ -85,7 +85,7 @@ public class GifSequenceWriter {
 
     child.setUserObject(new byte[]{ 0x1, (byte) (loop & 0xFF), (byte)
       ((loop >> 8) & 0xFF)});
-    appEntensionsNode.appendChild(child);
+    appExtensionsNode.appendChild(child);
 
     imageMetaData.setFromTree(metaFormatName, root);
 

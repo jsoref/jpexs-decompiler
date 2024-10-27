@@ -75,7 +75,7 @@ public class SyntaxView extends PlainView {
         Color saveColor = graphics.getColor();
         SyntaxDocument doc = (SyntaxDocument) getDocument();
         Segment segment = getLineBuffer();
-        // Draw the right margin first, if needed.  This way the text overalys
+        // Draw the right margin first, if needed.  This way the text overlays
         // the margin
         if (rightMarginColumn > 0) {
             int m_x = rightMarginColumn * graphics.getFontMetrics().charWidth('m');
@@ -102,7 +102,7 @@ public class SyntaxView extends PlainView {
                 int s = t.start;
                 // ... unless the token starts before p0:
                 if (s < p0) {
-                    // token is before what is requested. adgust the length and s
+                    // token is before what is requested. adjust the length and s
                     l -= (p0 - s);
                     s = p0;
                 }
@@ -224,11 +224,11 @@ public class SyntaxView extends PlainView {
         int x = (int) fx;
         int y = (int) fy;
         if (y < alloc.y) {
-            // above the area covered by this icon, so the the position
+            // above the area covered by this icon, so the position
             // is assumed to be the start of the coverage for this view.
             return getStartOffset();
         } else if (y > alloc.y + alloc.height) {
-            // below the area covered by this icon, so the the position
+            // below the area covered by this icon, so the position
             // is assumed to be the end of the coverage for this view.
             return getEndOffset() - 1;
         } else {

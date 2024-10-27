@@ -11,7 +11,7 @@ In the past (before 2018), we were using *free-decompiler.com* domain as homepag
 
 ## Download application
 For downloading the app, see [latest release](https://github.com/jindrapetrik/jpexs-decompiler/releases/latest).
-Older versions and nightly builds are availabe at the [releases section](https://github.com/jindrapetrik/jpexs-decompiler/releases)
+Older versions and nightly builds are available at the [releases section](https://github.com/jindrapetrik/jpexs-decompiler/releases)
 
 ### How to install
 See [installation section of the wiki](https://github.com/jindrapetrik/jpexs-decompiler/wiki/Installation)
@@ -36,7 +36,7 @@ git checkout dev
 ```
 
 ### GIT recommended
-It is recommended to have [GIT] commandline executables installed. Building script uses GIT to include revision number in to the binary. (For Windows, you must enable Git in windows command line during installation.)
+It is recommended to have [GIT] commandline executables installed. Building script uses GIT to include revision number into the binary. (For Windows, you must enable Git in windows command line during installation.)
 
 ### Netbeans project
 
@@ -81,11 +81,11 @@ All notable changes are listed in the file [CHANGELOG.md](CHANGELOG.md)
 ## Deployment
 
 ### Nightly builds
-When a commit is pushed/merged into `dev` branch, a new prerelease version is created automatically by Github actions CI.
+When a commit is pushed/merged into `dev` branch, a new prerelease version is created automatically by GitHub actions CI.
 These prerelease versions are called nightly builds. On releasing a new nightly build, the previous nightly build is removed.
 
 ### Stable versions
-A new stable version is created automatically by the Github Actions CI when marking a revision in `master` branch with a tag in format `versionx.y.z`.
+A new stable version is created automatically by the GitHub Actions CI when marking a revision in `master` branch with a tag in format `versionx.y.z`.
 
 ## Contributing
 
@@ -97,7 +97,7 @@ Versions are in format `x.y.z`, for example `9.1.2`.
 For the versions available, see the [tags on this repository](https://github.com/jindrapetrik/jpexs-decompiler/tags).
 
 Nightly builds have additional suffix `_nightlyN` where `N` is number which increments with every (automatic) nightly release
-and does not depend on the `x.y.z` numbers. (This means nightly number is *NOT* reseted to 0 when releasing stable)
+and does not depend on the `x.y.z` numbers. (This means nightly number is *NOT* reset to 0 when releasing stable)
 Older nightly builds are *NOT* available through git tags.
 
 ## Authors

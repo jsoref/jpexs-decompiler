@@ -410,7 +410,7 @@ public class EasySwfPanel extends JPanel {
             }
         });
         
-        verticalSplitPane = new JPersistentSplitPane(JSplitPane.VERTICAL_SPLIT, topPanel, timelinePanel, Configuration.guiSplitPaneEasyVerticaldividerLocationPercent);
+        verticalSplitPane = new JPersistentSplitPane(JSplitPane.VERTICAL_SPLIT, topPanel, timelinePanel, Configuration.guiSplitPaneEasyVerticalDividerLocationPercent);
 
         libraryTreeTable = new LibraryTreeTable(this);
         JScrollPane libraryScrollPane = new FasterScrollPane(libraryTreeTable);
@@ -482,7 +482,7 @@ public class EasySwfPanel extends JPanel {
             }
         });
 
-        horizontalSplitPane = new JPersistentSplitPane(JSplitPane.HORIZONTAL_SPLIT, verticalSplitPane, rightTabbedPane, Configuration.guiSplitPaneEasyHorizontaldividerLocationPercent);
+        horizontalSplitPane = new JPersistentSplitPane(JSplitPane.HORIZONTAL_SPLIT, verticalSplitPane, rightTabbedPane, Configuration.guiSplitPaneEasyHorizontalDividerLocationPercent);
 
         if (View.isOceanic()) {
             libraryScrollPane.getViewport().setBackground(Color.white);

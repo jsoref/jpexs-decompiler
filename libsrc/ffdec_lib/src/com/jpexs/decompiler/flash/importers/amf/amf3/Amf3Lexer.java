@@ -443,7 +443,7 @@ public final class Amf3Lexer {
 
     /* error messages for the codes above */
     private static final String ZZ_ERROR_MSG[] = {
-        "Unkown internal scanner error",
+        "Unknown internal scanner error",
         "Error: could not match input",
         "Error: pushback value was too large"
     };
@@ -773,7 +773,7 @@ public final class Amf3Lexer {
     }
 
     /**
-     * Reports an error that occured while scanning.
+     * Reports an error that occurred while scanning.
      * <p>
      * In a wellformed scanner (no or only correct usage of yypushback(int) and
      * a match-all fallback rule) this method will only be called with things

@@ -89,7 +89,7 @@ public abstract class GraphTargetItem implements Serializable, Cloneable {
 
     public static final int PRECEDENCE_CONDITIONAL = 13;
 
-    public static final int PRECEDENCE_ASSIGMENT = 14;
+    public static final int PRECEDENCE_ASSIGNMENT = 14;
 
     public static final int PRECEDENCE_COMMA = 15;
 
@@ -551,7 +551,7 @@ public abstract class GraphTargetItem implements Serializable, Cloneable {
      */
     public GraphTextWriter appendTry(GraphTextWriter writer, LocalData localData, String implicitCoerce) throws InterruptedException {
         GraphTargetItem t = this;
-        if (!implicitCoerce.isEmpty()) {    //if implicit oerce equals explicit
+        if (!implicitCoerce.isEmpty()) {    //if implicit coerce equals explicit
             /*if (t instanceof ConvertAVM2Item) {
                 if (implicitCoerce.equals((((ConvertAVM2Item) t).type.toString()))) {
                     t = t.value;
@@ -1065,7 +1065,7 @@ public abstract class GraphTargetItem implements Serializable, Cloneable {
      */
     public GraphTextWriter appendCommands(GraphTargetItem prevLineItem, GraphTextWriter writer, LocalData localData, List<GraphTargetItem> commands, boolean asBlock) throws InterruptedException {
 
-        //This may be useful in the future, but we must handle obfuscated SWFs where there is only one debugline instruction on the beggining.
+        //This may be useful in the future, but we must handle obfuscated SWFs where there is only one debugline instruction on the beginning.
         final boolean useLineInfo = false;
 
         int prevLine = prevLineItem == null ? 0 : prevLineItem.getLine();

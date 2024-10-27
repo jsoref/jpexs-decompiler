@@ -257,7 +257,7 @@ public abstract class GraphTextWriter {
      * @param offset Offset
      * @return GraphTextWriter
      */
-    public static String hilighOffset(String text, long offset) {
+    public static String hilightOffset(String text, long offset) {
         return "";
     }
 
@@ -454,11 +454,11 @@ public abstract class GraphTextWriter {
     }        
     
     /**
-     * Space before call parenthesies.
+     * Space before call parenthesis.
      * @param argCount Argument count
      * @return GraphTextWriter
      */
-    public GraphTextWriter spaceBeforeCallParenthesies(int argCount) {
+    public GraphTextWriter spaceBeforeCallParenthesis(int argCount) {
         if (argCount > 0) {
             if (formatting.spaceBeforeParenthesesMethodCallParentheses) {
                 space();

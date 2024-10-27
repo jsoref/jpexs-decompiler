@@ -16,7 +16,7 @@ public class InWindow
 	public int _bufferOffset;
 	
 	public int _blockSize;  // Size of Allocated memory block
-	public int _pos;             // offset (from _buffer) of curent byte
+	public int _pos;             // offset (from _buffer) of current byte
 	int _keepSizeBefore;  // how many BYTEs must be kept in buffer before _pos
 	int _keepSizeAfter;   // how many BYTEs must be kept buffer after _pos
 	public int _streamPos;   // offset (from _buffer) of first not read byte from Stream
@@ -49,8 +49,8 @@ public class InWindow
 			if (numReadBytes == -1)
 			{
 				_posLimit = _streamPos;
-				int pointerToPostion = _bufferOffset + _posLimit;
-				if (pointerToPostion > _pointerToLastSafePosition)
+				int pointerToPosition = _bufferOffset + _posLimit;
+				if (pointerToPosition > _pointerToLastSafePosition)
 					_posLimit = _pointerToLastSafePosition - _bufferOffset;
 				
 				_streamEndWasReached = true;
@@ -64,11 +64,11 @@ public class InWindow
 	
 	void Free() { _bufferBase = null; }
 	
-	public void Create(int keepSizeBefore, int keepSizeAfter, int keepSizeReserv)
+	public void Create(int keepSizeBefore, int keepSizeAfter, int keepSizeReserve)
 	{
 		_keepSizeBefore = keepSizeBefore;
 		_keepSizeAfter = keepSizeAfter;
-		int blockSize = keepSizeBefore + keepSizeAfter + keepSizeReserv;
+		int blockSize = keepSizeBefore + keepSizeAfter + keepSizeReserve;
 		if (_bufferBase == null || _blockSize != blockSize)
 		{
 			Free();
@@ -95,8 +95,8 @@ public class InWindow
 		_pos++;
 		if (_pos > _posLimit)
 		{
-			int pointerToPostion = _bufferOffset + _pos;
-			if (pointerToPostion > _pointerToLastSafePosition)
+			int pointerToPosition = _bufferOffset + _pos;
+			if (pointerToPosition > _pointerToLastSafePosition)
 				MoveBlock();
 			ReadBlock();
 		}

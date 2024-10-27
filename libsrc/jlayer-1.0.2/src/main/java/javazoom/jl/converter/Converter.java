@@ -1,6 +1,6 @@
 /*
  * 11/19/04 1.0 moved to LGPL.
- * 12/12/99 Original verion. mdm@techie.com.
+ * 12/12/99 Original version. mdm@techie.com.
  *-----------------------------------------------------------------------
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU Library General Public License as published
@@ -216,7 +216,7 @@ public class Converter {
          * but before it has been decoded.
          *
          * @param frameNo The 0-based sequence number of the frame.
-         * @param header  The Header rerpesenting the frame just read.
+         * @param header  The Header representing the frame just read.
          */
         void readFrame(int frameNo, Header header);
 
@@ -224,8 +224,8 @@ public class Converter {
          * This method is called after a frame has been decoded.
          *
          * @param frameNo The 0-based sequence number of the frame.
-         * @param header  The Header rerpesenting the frame just read.
-         * @param o       The Obuffer the deocded data was written to.
+         * @param header  The Header representing the frame just read.
+         * @param o       The Obuffer the decoded data was written to.
          */
         void decodedFrame(int frameNo, Header header, Obuffer o);
 
@@ -311,7 +311,7 @@ public class Converter {
                 pw.println("File is a " + headerString);
             } else if (isDetail(MAX_DETAIL)) {
                 String headerString = header.toString();
-                pw.println("Prased frame " + frameNo + ": " + headerString);
+                pw.println("Parsed frame " + frameNo + ": " + headerString);
             }
         }
 

@@ -1238,7 +1238,7 @@ public final class ImagePanel extends JPanel implements MediaDisplay {
                             }                            
                         }
                         
-                        mouseMoved(e); //to correctly calculate mode, because moseMoved event is not called during dragging
+                        mouseMoved(e); //to correctly calculate mode, because mouseMoved event is not called during dragging
                         setDragStart(e.getPoint());                                                
                       
                         if (!shiftDown) {
@@ -3975,7 +3975,7 @@ public final class ImagePanel extends JPanel implements MediaDisplay {
                         } else {
                             frameOverMaxShouldBeNow = startFrame + ticksFromStart;
 
-                            //Apply maximum frames repating, this is actual frame which should be drawed now
+                            //Apply maximum frames repeating, this is actual frame which should be drawed now
                             int frameShouldBeNow = frameOverMaxShouldBeNow % frameCount;
 
                             skipFrames = frameShouldBeNow - curFrame;

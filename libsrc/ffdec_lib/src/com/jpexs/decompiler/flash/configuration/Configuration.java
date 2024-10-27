@@ -1032,12 +1032,12 @@ public final class Configuration {
     @ConfigurationDefaultDouble(0.7)
     @ConfigurationName("gui.splitPaneEasyVertical.dividerLocationPercent")
     @ConfigurationInternal
-    public static ConfigurationItem<Double> guiSplitPaneEasyVerticaldividerLocationPercent = null;
+    public static ConfigurationItem<Double> guiSplitPaneEasyVerticalDividerLocationPercent = null;
     
     @ConfigurationDefaultDouble(0.7)
     @ConfigurationName("gui.splitPaneEasyHorizontal.dividerLocationPercent")
     @ConfigurationInternal
-    public static ConfigurationItem<Double> guiSplitPaneEasyHorizontaldividerLocationPercent = null;
+    public static ConfigurationItem<Double> guiSplitPaneEasyHorizontalDividerLocationPercent = null;
     
     public static ConfigurationItem<String> lastSessionEasySwf = null;
     
@@ -1340,7 +1340,7 @@ public final class Configuration {
         } else {
             logLevel = Level.WARNING;
         }
-        //limit paralel threads?
+        //limit parallel threads?
         //int processorCount = Runtime.getRuntime().availableProcessors();
     }
 

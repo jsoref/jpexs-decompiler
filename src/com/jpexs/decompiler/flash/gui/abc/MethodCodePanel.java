@@ -101,12 +101,12 @@ public class MethodCodePanel extends JPanel {
         return sourceTextArea.getName();
     }
 
-    public void setIgnoreCarret(boolean ignoreCarret) {
-        sourceTextArea.setIgnoreCarret(ignoreCarret);
+    public void setIgnoreCaret(boolean ignoreCaret) {
+        sourceTextArea.setIgnoreCaret(ignoreCaret);
     }
 
-    public void hilighOffset(long offset) {
-        sourceTextArea.hilighOffset(offset);
+    public void hilightOffset(long offset) {
+        sourceTextArea.hilightOffset(offset);
     }
 
     public void hilighSpecial(HighlightSpecialType type, String specialValue) {

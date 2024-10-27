@@ -27,7 +27,7 @@ import jsyntaxpane.SyntaxDocument;
 import jsyntaxpane.Token;
 
 /**
- * This class contains static utility methods to make highliting in text 
+ * This class contains static utility methods to make highlighting in text 
  * components easier.
  * 
  * @author Ayman Al-Sairafi
@@ -99,7 +99,7 @@ public class Markers {
                 hiliter.addHighlight(start, end, marker);
                 return;
             }
-            // selection starts within the highlight, highlight before slection
+            // selection starts within the highlight, highlight before selection
             if(selStart > start && selStart < end ) {
                 hiliter.addHighlight(start, selStart, marker);
             }

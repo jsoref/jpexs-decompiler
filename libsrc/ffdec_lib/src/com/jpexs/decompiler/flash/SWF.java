@@ -351,7 +351,7 @@ public final class SWF implements SWFContainerItem, Timelined, Openable {
 
     /**
      * Map of characterId to CharacterTag including imported tags. The
-     * CharacterTags.getCharacterId() does not neccessarily be the characterId
+     * CharacterTags.getCharacterId() does not necessarily be the characterId
      * in the map since there can be imported CharacterTags from other SWFs.
      */
     @Internal
@@ -699,7 +699,7 @@ public final class SWF implements SWFContainerItem, Timelined, Openable {
     }
 
     /**
-     * Gets main ABCIndexing object for playerflobal.swc
+     * Gets main ABCIndexing object for playerglobal.swc
      *
      * @return ABCIndexing
      */
@@ -1714,7 +1714,7 @@ public final class SWF implements SWFContainerItem, Timelined, Openable {
     /**
      * Gets all tags with specified type id.
      *
-     * @param tagId Identificator of tag type
+     * @param tagId Identifier of tag type
      * @return List of tags
      */
     public List<Tag> getTagData(int tagId) {
@@ -1797,7 +1797,7 @@ public final class SWF implements SWFContainerItem, Timelined, Openable {
     }
 
     /**
-     * Gets specifif header bytes.
+     * Gets specific header bytes.
      *
      * @param compression Compression
      * @param gfx GFX
@@ -1859,7 +1859,7 @@ public final class SWF implements SWFContainerItem, Timelined, Openable {
     /**
      * Save file to byte array.
      *
-     * @param includeImported Include imported characterss
+     * @param includeImported Include imported characters
      * @return Byte array
      * @throws IOException On I/O error
      */
@@ -1871,7 +1871,7 @@ public final class SWF implements SWFContainerItem, Timelined, Openable {
      * Save file to byte array with GFX option.
      *
      * @param gfx GFX
-     * @param includeImported Include imported characterss
+     * @param includeImported Include imported characters
      * @return Byte array
      * @throws IOException On I/O error
      */
@@ -2237,7 +2237,7 @@ public final class SWF implements SWFContainerItem, Timelined, Openable {
         SWFInputStream sis = new SWFInputStream(this, uncompressedData);
         dumpInfo = new DumpInfoSwfNode(this, "rootswf", "", null, 0, 0);
         sis.dumpInfo = dumpInfo;
-        sis.skipBytesEx(3, "signature"); // skip siganture
+        sis.skipBytesEx(3, "signature"); // skip signature
         version = sis.readUI8("version");
 
         if (version > 5) {
@@ -2451,7 +2451,7 @@ public final class SWF implements SWFContainerItem, Timelined, Openable {
     }
 
     /**
-     * Gets title of this SWF incuding parent nodes like SwfList and
+     * Gets title of this SWF including parent nodes like SwfList and
      * DefineBinaryData.
      *
      * @return Title of the SWF
@@ -2645,7 +2645,7 @@ public final class SWF implements SWFContainerItem, Timelined, Openable {
 
         boolean uncompressed = hdr[0] == 'F' || hdr[0] == 'G'; // FWS or GFX
         if (!uncompressed) {
-            // fisrt decompress, then compress to the given format
+            // first decompress, then compress to the given format
             is.reset();
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             decompress(is, baos, false);
@@ -3766,7 +3766,7 @@ public final class SWF implements SWFContainerItem, Timelined, Openable {
 
             int requiredStackSize = ins.getStackPopCount(localData, stack);
             if (stack.size() < requiredStackSize) {
-                // probably obfucated code, never executed branch
+                // probably obfuscated code, never executed branch
                 break;
             }
 
@@ -5261,12 +5261,12 @@ public final class SWF implements SWFContainerItem, Timelined, Openable {
 
     /**
      * Sorts character ids. Order of character ids will match the first
-     * occurence of the characters.
+     * occurrence of the characters.
      */
     public void sortCharacterIds() {
         int maxId = Math.max(tags.size(), getNextCharacterId());
         int id = maxId;
-        // first set the chatacter ids to surely not used ids
+        // first set the character ids to surely not used ids
         for (Tag tag : getTags()) {
             if (tag instanceof CharacterTag) {
                 CharacterTag characterTag = (CharacterTag) tag;
@@ -5444,14 +5444,14 @@ public final class SWF implements SWFContainerItem, Timelined, Openable {
                 try {
                     s.injectDebugInfo(decompileDir, swfHash);
                 } catch (Throwable t) {
-                    Logger.getLogger(SWF.class.getName()).log(Level.SEVERE, "Errorr injecting debug info", t);
+                    Logger.getLogger(SWF.class.getName()).log(Level.SEVERE, "Error injecting debug info", t);
                 }
             }
         }
     }
 
     /**
-     * Enables debugging. Adds tags to enable debugging and optinally injects
+     * Enables debugging. Adds tags to enable debugging and optionally injects
      * debugline and debugfile instructions to AS3 code by decompiling it first
      *
      * @param injectAS3Code Modify AS3 code with debugfile / debugline ?

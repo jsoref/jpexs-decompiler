@@ -3,7 +3,7 @@
  *
  * 18/06/01  Michael Scheerer,  Fixed bugs which causes
  *           negative indexes in method huffmann_decode and in method
- *           dequanisize_sample.
+ *           dequantize_sample.
  *
  * 16/07/01  Michael Scheerer, Catched a bug in method
  *           huffmann_decode, which causes an outOfIndexException.
@@ -820,7 +820,7 @@ final class LayerIIIDecoder implements FrameDecoder {
         float g_gain;
         float[][] xr_1d = xr;
 
-        // choose correct scalefactor band per block type, initalize boundary
+        // choose correct scalefactor band per block type, initialize boundary
 
         if ((gr_info.window_switching_flag != 0) && (gr_info.block_type == 2)) {
             if (gr_info.mixed_block_flag != 0)
@@ -1610,13 +1610,13 @@ final class LayerIIIDecoder implements FrameDecoder {
             //         http://www.iro.umontreal.ca/~boyerf
             //
             // The code has been optimized for Intel processors
-            //  (takes a lot of time to convert float to and from iternal FPU representation)
+            //  (takes a lot of time to convert float to and from internal FPU representation)
             //
             // It is a simple "factorization" of the IDCT matrix.
 
             // 9 point IDCT on even indices
 
-            // 5 points on odd indices (not realy an IDCT)
+            // 5 points on odd indices (not really an IDCT)
             float i00 = in[0] + in[0];
             float iip12 = i00 + in[12];
 
@@ -1635,7 +1635,7 @@ final class LayerIIIDecoder implements FrameDecoder {
             tmp3_ = in[2] * 0.68404028665134f - i66_ + in[10] * 1.9696155060244f - in[14] * 1.2855752193731f;
 
             // 9 point IDCT on odd indices
-            // 5 points on odd indices (not realy an IDCT)
+            // 5 points on odd indices (not really an IDCT)
             float i0 = in[0 + 1] + in[0 + 1];
             float i0p12 = i0 + in[12 + 1];
 

@@ -104,7 +104,7 @@ public class CallMethodActionItem extends ActionItem {
                 } else if (methodNameStr.startsWith("__set__") && arguments.size() == 1) {
                     special = SPECIAL_SETTER;
                     setterGetterVarName = methodNameStr.substring(7);
-                    precedence = PRECEDENCE_ASSIGMENT;
+                    precedence = PRECEDENCE_ASSIGNMENT;
                 }
             }
         }
@@ -185,7 +185,7 @@ public class CallMethodActionItem extends ActionItem {
             writer.append("]");
         }
 
-        writer.spaceBeforeCallParenthesies(arguments.size());
+        writer.spaceBeforeCallParenthesis(arguments.size());
         writer.append("(");
         for (int t = 0; t < arguments.size(); t++) {
             if (t > 0) {

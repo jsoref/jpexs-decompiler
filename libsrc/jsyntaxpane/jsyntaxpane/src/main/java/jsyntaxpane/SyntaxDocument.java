@@ -236,7 +236,7 @@ public class SyntaxDocument extends PlainDocument {
      *
      * @param start start position for getting tokens
      * @param end position for last token
-     * @return Iterator for tokens that overal with range from start to end
+     * @return Iterator for tokens that overall with range from start to end
      */
     public Iterator<Token> getTokens(int start, int end) {
         return new TokenIterator(start, end);
@@ -348,7 +348,7 @@ public class SyntaxDocument extends PlainDocument {
         }
         Token p = null;
         int ndx = tokens.indexOf(t);
-        // w will be similar to a stack. The openners weght is added to it
+        // w will be similar to a stack. The openers weight is added to it
         // and the closers are subtracted from it (closers are already negative)
         int w = t.pairValue;
         int direction = (t.pairValue > 0) ? 1 : -1;
